@@ -8,7 +8,6 @@ namespace GoTaxi.API.Dominio.Models
     public class VehiculosModel
     {
         [Key]
-
         public int IdVehiculos { get; set; }
 
         public string Marca { get; set; }

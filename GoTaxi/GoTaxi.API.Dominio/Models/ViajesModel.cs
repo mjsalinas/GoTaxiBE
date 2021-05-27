@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using GoTaxi.GoTaxi.API.Dominio.Models;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 
 namespace GoTaxi.API.Dominio.Models
 {
@@ -12,13 +11,16 @@ namespace GoTaxi.API.Dominio.Models
         public int IdViaje { get; set; }
 
         public int IdConductor { get; set; }
-        [ForeignKey("idUsuario")]
+        [ForeignKey("IdConductor")]
+        public ConductoresModel Conductor { get; set; }
 
         public int IdVehiculo { get; set; }
-        [ForeignKey("idVehiculo")]
+        [ForeignKey("IdVehiculo")]
+        public VehiculosModel Vehiculo { get; set; }
 
         public int IdPasajero { get; set; }
-        [ForeignKey("idUsuario")]
+        [ForeignKey("IdUsuario")]
+        public UsuariosModel Pasajero { get; set; }
 
         public string PuntoPartida { get; set; }
 

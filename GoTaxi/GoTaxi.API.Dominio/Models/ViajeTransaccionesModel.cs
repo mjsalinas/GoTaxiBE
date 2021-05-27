@@ -9,14 +9,14 @@ namespace GoTaxi.API.Dominio.Models
     public partial class ViajeTransaccionesModel
     {
         [Key]
-        public int IdViajeTransac;
+        public int IdViajeTransacciones { get; set; }
 
         public int IdViaje { get; set; }
-        [ForeignKey("idViaje")]
+        [ForeignKey("IdViaje")]
         public ViajesModel Viaje { get; set; }
 
-        public DateTime FechaHora;
+        public DateTime FechaHora { get; set; }
 
-        public string Estado;
+        public string Estado { get; set; }
     }
 }

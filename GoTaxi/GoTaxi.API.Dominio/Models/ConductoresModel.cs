@@ -1,15 +1,17 @@
-﻿using System;
+﻿using GoTaxi.API.Dominio.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace GoTaxi.API.Dominio.Models
+namespace GoTaxi.GoTaxi.API.Dominio.Models
 {
-    public class UsuariosModel
+    public class ConductoresModel
     {
         [Key]
-        public int IdUsuario { get; set; }
+        public int IdConductor { get; set; }
 
         public int IdRol { get; set; }
         [ForeignKey("IdRol")]
