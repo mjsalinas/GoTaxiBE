@@ -66,7 +66,7 @@ namespace GoTaxi.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<DateTime>("FechaNacimiento")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("datetime");
 
                     b.Property<int>("IdRol")
                         .HasColumnType("int");
@@ -126,7 +126,7 @@ namespace GoTaxi.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<DateTime>("FechaHora")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("datetime");
 
                     b.Property<int>("IdViaje")
                         .HasColumnType("int");
@@ -148,13 +148,13 @@ namespace GoTaxi.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<DateTime>("Fecha")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("datetime");
 
                     b.Property<DateTime>("HoraProgramada")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("datetime");
 
                     b.Property<DateTime>("HoraRegistro")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("datetime");
 
                     b.Property<int>("IdConductor")
                         .HasColumnType("int");
@@ -204,7 +204,7 @@ namespace GoTaxi.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<DateTime>("FechaNacimiento")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("datetime");
 
                     b.Property<int>("IdRol")
                         .HasColumnType("int");

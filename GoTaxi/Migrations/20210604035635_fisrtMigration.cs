@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace GoTaxi.Migrations
 {
-    public partial class InitialMigration : Migration
+    public partial class fisrtMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -62,7 +62,7 @@ namespace GoTaxi.Migrations
                     IdRol = table.Column<int>(type: "int", nullable: false),
                     Nombre = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    FechaNacimiento = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    FechaNacimiento = table.Column<DateTime>(type: "datetime", nullable: false),
                     Correo = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Contrasenia = table.Column<string>(type: "longtext", nullable: true)
@@ -91,7 +91,7 @@ namespace GoTaxi.Migrations
                     IdRol = table.Column<int>(type: "int", nullable: false),
                     Nombre = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    FechaNacimiento = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    FechaNacimiento = table.Column<DateTime>(type: "datetime", nullable: false),
                     Correo = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Contrasenia = table.Column<string>(type: "longtext", nullable: true)
@@ -125,9 +125,9 @@ namespace GoTaxi.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     PuntoDestino = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    Fecha = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    HoraRegistro = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    HoraProgramada = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    Fecha = table.Column<DateTime>(type: "datetime", nullable: false),
+                    HoraRegistro = table.Column<DateTime>(type: "datetime", nullable: false),
+                    HoraProgramada = table.Column<DateTime>(type: "datetime", nullable: false),
                     NoPasajerosTotal = table.Column<int>(type: "int", nullable: false),
                     Tarifa = table.Column<double>(type: "double", nullable: false),
                     EstadoActual = table.Column<string>(type: "longtext", nullable: true)
@@ -187,7 +187,7 @@ namespace GoTaxi.Migrations
                     IdViajeTransacciones = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     IdViaje = table.Column<int>(type: "int", nullable: false),
-                    FechaHora = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    FechaHora = table.Column<DateTime>(type: "datetime", nullable: false),
                     Estado = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4")
                 },

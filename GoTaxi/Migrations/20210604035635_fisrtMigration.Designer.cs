@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GoTaxi.Migrations
 {
     [DbContext(typeof(GoTaxiContext))]
-    [Migration("20210527045750_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20210604035635_fisrtMigration")]
+    partial class fisrtMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -68,7 +68,7 @@ namespace GoTaxi.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<DateTime>("FechaNacimiento")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("datetime");
 
                     b.Property<int>("IdRol")
                         .HasColumnType("int");
@@ -128,7 +128,7 @@ namespace GoTaxi.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<DateTime>("FechaHora")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("datetime");
 
                     b.Property<int>("IdViaje")
                         .HasColumnType("int");
@@ -150,13 +150,13 @@ namespace GoTaxi.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<DateTime>("Fecha")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("datetime");
 
                     b.Property<DateTime>("HoraProgramada")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("datetime");
 
                     b.Property<DateTime>("HoraRegistro")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("datetime");
 
                     b.Property<int>("IdConductor")
                         .HasColumnType("int");
@@ -206,7 +206,7 @@ namespace GoTaxi.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<DateTime>("FechaNacimiento")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("datetime");
 
                     b.Property<int>("IdRol")
                         .HasColumnType("int");
