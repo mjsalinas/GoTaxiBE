@@ -39,4 +39,12 @@ namespace GoTaxi.DTOs.Request
         public string Contrasenia { get; set; }
         public string Telefono { get; set; }
     }
+
+    public class LoginUsuarioRequest
+    {
+        public int IdUsuario { get; set; }
+        public int IdRol { get; set; }
+        public string Correo { get; set; }
+        public string Contrasenia { get; set; }
+    }
 }

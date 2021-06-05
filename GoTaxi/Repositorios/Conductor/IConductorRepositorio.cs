@@ -12,5 +12,6 @@ namespace GoTaxi.Repositorios.Conductor
         public ConductorDto ObtenerIdConductor(int id);
         public ConductorDto ObtenerMailConductor(string email);
         public ConductorDto GuardarConductor(ConductorDto nuevoConductor);
+        public ConductorDto LoginConductor(string email, string password);
     }
 }

@@ -116,6 +116,37 @@ namespace GoTaxi.Repositorios.Usuarios
                 };
             }
         }
+
+        public UsuariosDto LoginUsuario(string email, string password)
+        {
+            GoTaxiContext db = new GoTaxiContext();
+            UsuariosModel userDTO = new UsuariosModel();
+
+            bool verificaCorreo = ObtenerMailUsuario(email).Contrasenia.Equals(password);
+
+            userDTO = db.Usuarios.FirstOrDefault(driver => driver.Correo == email);
+
+
+            if (verificaCorreo)
+            {
+                return new UsuariosDto
+                {
+                    IdRol = userDTO.IdRol,
+                    Rol = userDTO.Rol,
+                    Nombre = userDTO.Nombre,
+                    FechaNacimiento = userDTO.FechaNacimiento,
+                    Correo = userDTO.Correo,
+                    Contrasenia = userDTO.Contrasenia,
+                    Telefono = userDTO.Telefono
+                };
+            }
+
+            return new UsuariosDto
+            {
+                MensajeDeError = "Usuario o contraseña no valido"
+            };
+
+        }
     }
 
 

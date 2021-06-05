@@ -12,5 +12,6 @@ namespace GoTaxi.Repositorios.Usuarios
         public UsuariosDto ObtenerIdUsuario(int id);
         public UsuariosDto ObtenerMailUsuario(string email);
         public UsuariosDto GuardarUsuario(UsuariosDto nuevoUsuario);
+        public UsuariosDto LoginUsuario(string email, string password);
     }
 }
