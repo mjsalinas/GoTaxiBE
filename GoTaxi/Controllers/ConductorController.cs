@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace GoTaxi.Controllers
 {
+    [Route("conductor")]
     [ApiController]
-    [Route("[/conductor]")]
     class ConductorController : ControllerBase
     {
         private readonly IConductoresAppService _IconductorAppService;

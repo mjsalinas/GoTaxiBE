@@ -10,8 +10,8 @@ using System.Threading.Tasks;
 namespace GoTaxi.Controllers
 {
 
+    [Route("viajes")]
     [ApiController]
-    [Route("[/viajes]")]
     public class ViajesController : ControllerBase
     {
         private readonly IViajesAppService _iViajesAppService;

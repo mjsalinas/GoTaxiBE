@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace GoTaxi.Servicios.ViajesServices
 {
-    public class ViajesAppService
+    public class ViajesAppService : IViajesAppService
     {
         private readonly IViajesRepositorio _viajesRepositorio;
         private readonly IUsuarioRepositorio _usuariosRepositorio;

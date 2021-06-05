@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace GoTaxi.Controllers
 {
+    [Route("vehiculos")]
     [ApiController]
-    [Route("[/Vehiculo]")]
     public class VehiculoController : ControllerBase
     {
     }

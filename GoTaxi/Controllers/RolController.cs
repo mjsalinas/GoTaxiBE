@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace GoTaxi.Controllers
 {
+    [Route("roles")]
     [ApiController]
-    [Route("[/roles]")]
     public class RolController : ControllerBase
     {
         private readonly IRolesAppService _iRolesAppService;

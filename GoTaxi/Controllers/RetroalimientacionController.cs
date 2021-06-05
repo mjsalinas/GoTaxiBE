@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace GoTaxi.Controllers
 {
+    [Route("retroalimentacion")]
     [ApiController]
-    [Route("[/Retroalimentacion]")]
     public class RetroalimentacionController : ControllerBase
     {
         private readonly IRetroalimentacionAppService _iRetroalimentacionAppService;

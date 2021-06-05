@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GoTaxi.Servicios.ViajeService
 {
-    public class ViajeTransaccionesAppService
+    public class ViajeTransaccionesAppService : IViajeTransaccionesAppService
     {
         private readonly IViajesTransaccionesRepositorio _viajeTransaccionesRepositorio;
 
