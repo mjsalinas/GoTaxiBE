@@ -9,7 +9,9 @@ namespace GoTaxi.Servicios.VehiculoService
 {
     public interface IVehiculoAppService
     {
-        public List<VehiculosDto> ObtenerVehiculos(VehiculoRequest request);
-        List<VehiculosDto> ObtenerVehiculos(ObtenerVehiculoRequest obtenerVehiculoRequest);
+        public List<VehiculosDto> ObtenerVehiculos(ObtenerVehiculoRequest request);
+        public List<VehiculosDto> NuevoVehiculos(NuevoVehiculoRequest request);
+        public List<VehiculosDto> GuardarVehiculos(GuardarVehiculoRequest request);
+
     }
 }

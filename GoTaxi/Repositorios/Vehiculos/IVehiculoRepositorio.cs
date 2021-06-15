@@ -9,7 +9,9 @@ namespace GoTaxi.Repositorios.Vehiculos
     public interface IVehiculoRepositorio
     {
         public List<VehiculosDto> ObtenerVehiculos();
-        public List<VehiculosDto> ObtenerRoles();
+        public List<VehiculosDto> NuevoVehiculos();
+        public List<VehiculosDto> GuardarVehiculos();
+
         public VehiculosDto ObtenerVehiculoPorId(int idVehiculo);
     }
 }

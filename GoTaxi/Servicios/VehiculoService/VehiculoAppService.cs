@@ -17,20 +17,23 @@ namespace GoTaxi.Servicios.VehiculoService
             if (VehiculosRepositorio == null) throw new ArgumentNullException("VehiculosRepositorio");
             _VehiculosRepositorio = VehiculosRepositorio;
         }
-        public List<VehiculosDto> ObtenerRoles(VehiculoRequest request)
+        public List<VehiculosDto> ObtenerVehiculos(ObtenerVehiculoRequest request)
         {
-            List<VehiculosDto> rolesExistentes = _VehiculosRepositorio.ObtenerRoles();
-            return rolesExistentes;
+            List<VehiculosDto> VehiculosExistentes = _VehiculosRepositorio.GuardarVehiculos();
+            return VehiculosExistentes;
         }
 
-        public List<VehiculosDto> ObtenerVehiculos(VehiculoRequest request)
+        public List<VehiculosDto> NuevoVehiculos(NuevoVehiculoRequest request)
         {
-            throw new NotImplementedException();
+
+            List<VehiculosDto> VehiculosExistentes = _VehiculosRepositorio.GuardarVehiculos();
+            return VehiculosExistentes;
         }
 
-        public List<VehiculosDto> ObtenerVehiculos(ObtenerVehiculoRequest obtenerVehiculoRequest)
+        public List<VehiculosDto> GuardarVehiculos(GuardarVehiculoRequest obtenerVehiculoRequest)
         {
-            throw new NotImplementedException();
+            List<VehiculosDto> VehiculosExistentes = _VehiculosRepositorio.GuardarVehiculos();
+            return VehiculosExistentes;
         }
     }
 }

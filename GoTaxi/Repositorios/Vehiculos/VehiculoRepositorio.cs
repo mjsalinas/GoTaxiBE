@@ -10,12 +10,8 @@ namespace GoTaxi.Repositorios.Vehiculos
 {
     public class VehiculoRepositorio : IVehiculoRepositorio
     {
-        public List<VehiculosDto> ObtenerRoles()
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<VehiculosDto> ObtenerVehiculos()
+   
+        public List<VehiculosDto> GuardarVehiculos()
         {
             GoTaxiContext db = new GoTaxiContext();
             List<VehiculosModel> vehiculos = db.Vehiculos.ToList();
@@ -56,6 +52,22 @@ namespace GoTaxi.Repositorios.Vehiculos
                 TipoAuto = vehiculoDTOs.TipoAuto,
                 Placa = vehiculoDTOs.Placa
             };
+
+        }
+
+        public List<VehiculosDto> ObtenerVehiculos()
+        {
+            throw new NotImplementedException();
+        }
+
+        List<VehiculosDto> IVehiculoRepositorio.GuardarVehiculos()
+        {
+            throw new NotImplementedException();
+        }
+
+        List<VehiculosDto> IVehiculoRepositorio.NuevoVehiculos()
+        {
+            throw new NotImplementedException();
         }
     }
 }
