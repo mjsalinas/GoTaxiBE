@@ -29,19 +29,6 @@ namespace GoTaxi.Controllers
             return Ok(vehiculos);
         }
 
-        [HttpPost]
-        public IActionResult NuevoVehiculo()
-        {
-            var nuevoVehiculo = _ivehiculoAppService.NuevoVehiculos(request);
-            if (string.IsNullOrEmpty(nuevoVehiculo.MensajeDeError))
-            {
-                return Ok(nuevoVehiculo);
-            }
-            else
-            {
-                return BadRequest(nuevoVehiculo);
-            }
         }
 
     }
-}
